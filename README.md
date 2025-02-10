@@ -6,7 +6,7 @@ Este repositorio contiene código relacionado con el blog [Ideas Artificiales](h
 
 ## Contenidos del Repositorio
 
-- **Anatomía de un algoritmo de inteligencia artificial**
+- **[Anatomía de un algoritmo de inteligencia artificial](https://github.com/DrAnonimo/IdeasArtificiales/tree/main/Anatom%C3%ADaAlgoritmoIA)**
   - Explicación detallada de los componentes clave de un algoritmo de IA.
   - Ejemplos de implementación en Python.
   - Visualizaciones y experimentos prácticos.
