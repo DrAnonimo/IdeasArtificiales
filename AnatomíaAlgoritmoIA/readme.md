@@ -2,7 +2,7 @@
 
 Este código implementa un modelo de **regresión logística** para clasificar **naranjas** y **mandarinas** en función de su diámetro y peso. Además, incluye una animación del proceso de optimización por descenso de gradiente.
 
-## Pasos del código
+## La primera celda del cuaderno
 
 1. **Generación de datos:** Se crean muestras de naranjas y mandarinas con cierto solapamiento utilizando distribuciones normales.
 2. **Normalización:** Se estandarizan el diámetro y el peso con la puntuación Z (Z-score).
@@ -32,3 +32,40 @@ from matplotlib.animation import FuncAnimation
 - Se observa la convergencia del modelo a medida que la función de costo disminuye.
 - Se produce una animación que muestra la optimización iterativa de la frontera de decisión.
 
+## La segunda celda del cuaderno
+
+Este código implementa un modelo de **regresión logística** para clasificar **naranjas** y **mandarinas** en función de su diámetro y peso. Además, visualiza la frontera de decisión y evalúa el modelo mediante una matriz de confusión.
+
+## Pasos del código
+
+1. **División del conjunto de datos:**
+   - Se seleccionan las características relevantes (diámetro y peso).
+   - Se dividen los datos en conjuntos de entrenamiento (70%) y prueba (30%).
+
+2. **Entrenamiento del modelo:**
+   - Se entrena una **regresión logística** con los datos de entrenamiento.
+
+3. **Visualización de la frontera de decisión:**
+   - Se crea una malla de puntos y se predicen las clases.
+   - Se grafica la frontera de decisión junto con los puntos de datos.
+
+4. **Evaluación del modelo:**
+   - Se predicen las etiquetas en el conjunto de prueba.
+   - Se calcula y muestra la **matriz de confusión** para evaluar el rendimiento del clasificador.
+
+## Requisitos
+
+Para ejecutar este código, se requieren las siguientes bibliotecas:
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+## Resultados
+
+- Se genera una **frontera de decisión** que separa las clases de naranjas y mandarinas.
+- Se observa el **desempeño del modelo** mediante la matriz de confusión, que muestra la cantidad de aciertos y errores en la clasificación.
