@@ -2,15 +2,17 @@
 
 Este código implementa un modelo de **regresión logística** para clasificar **naranjas** y **mandarinas** en función de su diámetro y peso. Además, incluye una animación del proceso de optimización por descenso de gradiente.
 
+Por razones prácticas he distribuido el código en dos celdas, la primera, está principalmente dedicada a pintar el proceso iterativo de ajuste de la frontera de decisión conforme se ajustan los parámetros. La segunda celda contiene lo que viene siendo el código estándard de un clasificador de ML, separación de datos, ajuste de parámetros usando datos de calibración y finalmente, validación del modelo usando datos de prueba. 
+
 ## La primera celda del [cuaderno](https://github.com/DrAnonimo/IdeasArtificiales/blob/main/Anatom%C3%ADaAlgoritmoIA/MandarinasNaranjas-RegresionLogistica.ipynb)
 
 1. **Generación de datos:** Se crean muestras de naranjas y mandarinas con cierto solapamiento utilizando distribuciones normales.
-2. **Normalización:** Se estandarizan el diámetro y el peso con la puntuación Z (Z-score).
+2. **Normalización:** Se estandarizan el diámetro y el peso con la estandarización Z-score.
 3. **Implementación de la regresión logística:**
    - Se define la **función sigmoide** para transformar valores lineales en probabilidades.
    - Se define la **función de costo** basada en entropía cruzada.
    - Se implementa el **descenso de gradiente** para optimizar los parámetros del modelo.
-4. **Entrenamiento del modelo:** Se ajustan los pesos θ mediante iteraciones del descenso de gradiente.
+4. **Ajuste de parámetros del modelo:** Se ajustan los pesos, θ, mediante iteraciones del descenso de gradiente.
 5. **Visualización del proceso de optimización:**
    - Se grafica la frontera de decisión en cada iteración.
    - Se crea una animación de la convergencia del modelo.
@@ -18,7 +20,7 @@ Este código implementa un modelo de **regresión logística** para clasificar *
 
 ## Requisitos
 
-Para ejecutar este código, se necesitan las siguientes bibliotecas:
+Para ejecutar este código, se necesitan las siguientes librerías:
 
 ```python
 import numpy as np
@@ -27,8 +29,6 @@ from matplotlib.animation import FuncAnimation
 ```
 
 ## Resultados
-
-- Se genera una frontera de decisión que separa naranjas y mandarinas.
 - Se observa la convergencia del modelo a medida que la función de costo disminuye.
 - Se produce una animación que muestra la optimización iterativa de la frontera de decisión.
 
@@ -43,7 +43,7 @@ Este código implementa un modelo de **regresión logística** para clasificar *
    - Se seleccionan las características relevantes (diámetro y peso).
    - Se dividen los datos en conjuntos de entrenamiento (70%) y prueba (30%).
 
-3. **Entrenamiento del modelo:**
+3. **Ajuste de parámetros del modelo:**
    - Se entrena una **regresión logística** con los datos de entrenamiento.
 
 4. **Visualización de la frontera de decisión:**
@@ -56,7 +56,7 @@ Este código implementa un modelo de **regresión logística** para clasificar *
 
 ## Requisitos
 
-Para ejecutar este código, se requieren las siguientes bibliotecas:
+Para ejecutar este código, se requieren las siguientes librerías:
 
 ```python
 from sklearn.model_selection import train_test_split
