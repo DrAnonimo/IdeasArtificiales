@@ -6,6 +6,10 @@
 
 <img src="DiagramaFlujo.png" alt="" width="600">
 
+<p align="center">
+  <img src="DiagramaFlujo.png" alt="" width="600">
+</p>
+
 Este código implementa un modelo de **regresión logística** para clasificar **naranjas** y **mandarinas** en función de su diámetro y peso. Además, incluye una animación del proceso de optimización por descenso de gradiente.
 
 Por razones prácticas he distribuido el código en dos celdas, la primera, está principalmente dedicada a pintar el proceso iterativo de ajuste de la frontera de decisión conforme se ajustan los parámetros. La segunda celda contiene lo que viene siendo el código estándard de un clasificador de ML, separación de datos, ajuste de parámetros usando datos de calibración y finalmente, validación del modelo usando datos de prueba. 
