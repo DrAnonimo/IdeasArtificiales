@@ -4,8 +4,6 @@
 
 # Regresión Logística con Solapamiento
 
-<img src="DiagramaFlujo.png" alt="" width="600">
-
 <p align="center">
   <img src="DiagramaFlujo.png" alt="" width="600">
 </p>
