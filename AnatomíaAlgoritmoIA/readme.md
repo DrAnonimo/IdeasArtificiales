@@ -1,4 +1,4 @@
-<img src="DiagramaFlujo.png" alt="" width="300">
+<img src="DiagramaFlujo.png" alt="" width="800">
 
 
 
