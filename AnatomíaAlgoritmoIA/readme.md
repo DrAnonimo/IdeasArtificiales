@@ -4,7 +4,10 @@
 
 # Regresión Logística con Solapamiento
 
-<img src="DiagramaFlujo.png" alt="" width="600">
+<div style="text-align: center;">
+    <img src="DiagramaFlujo.png" alt="" width="600">
+</div>
+
 
 Este código implementa un modelo de **regresión logística** para clasificar **naranjas** y **mandarinas** en función de su diámetro y peso. Además, incluye una animación del proceso de optimización por descenso de gradiente.
 
