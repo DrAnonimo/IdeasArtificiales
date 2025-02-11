@@ -1,4 +1,5 @@
-![](DiagramaFlujo.png)
+<img src="DiagramaFlujo.png" alt="" width="300">
+
 
 
 # Regresión Logística con Solapamiento
