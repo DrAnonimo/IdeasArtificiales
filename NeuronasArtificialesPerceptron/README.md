@@ -3,7 +3,7 @@
 Este repositorio contiene una implementación de un **perceptrón simple** para clasificación binaria en dos dimensiones. El código genera un conjunto de puntos aleatorios, los clasifica mediante un perceptrón y muestra la evolución de la línea de decisión a lo largo del entrenamiento mediante un **GIF**.
 
 <p align="center">
-  <img src="DiagramaFlujo.png" alt="" width="600">
+  <img src="Perceptron.jpeg" alt="" width="600">
 </p>
 
 ## Descripción del Código
