@@ -10,5 +10,11 @@ Este repositorio contiene código relacionado con el blog [Ideas Artificiales](h
   - Explicación detallada de los componentes clave de un algoritmo de IA.
   - Ejemplos de implementación en Python.
   - Visualizaciones y experimentos prácticos.
+ 
+
+- **[Neuronas artificiales y perceptrón](https://github.com/DrAnonimo/IdeasArtificiales/tree/neurona-artificial/NeuronasArtificialesPerceptron)**
+  - Explicación detallada de los componentes de un perceptrón.
+  - Ejemplos de implementación en Python.
+  - Visualizaciones y resultados.
 
 Más contenidos y análisis se irán agregando con el tiempo. ¡No dudes en explorar y contribuir!
