@@ -54,10 +54,11 @@ history = model.fit(X_train, y_train,
 Instalar dependencias:
 ```python
 pip install numpy matplotlib tensorflow
+```
 Ejecutar el script:
 ```python
 python mnist_neural_network.py
-
+```
 📌 Visualizaciones Incluidas
 - Muestra de 10 dígitos del dataset
 - Gráficos de evolución de precisión y pérdida
