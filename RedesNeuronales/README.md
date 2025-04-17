@@ -1,6 +1,6 @@
 # Clasificación de Dígitos MNIST con Redes Neuronales
 
-Este repositorio contiene una implementación de una red neuronal para clasificar dígitos escritos a mano del [dataset MNIST](https://es.wikipedia.org/wiki/Base_de_datos_MNIST), usando [TensorFlow/Keras](https://es.wikipedia.org/wiki/Keras).
+Este repositorio contiene una implementación de una red neuronal para clasificar dígitos escritos a mano (del [dataset MNIST](https://es.wikipedia.org/wiki/Base_de_datos_MNIST)), usando [TensorFlow/Keras](https://es.wikipedia.org/wiki/Keras).
 
 ## 📋 Contenido del Repositorio
 - `RedesNeuronales.ipynb`: Script principal con la implementación completa
