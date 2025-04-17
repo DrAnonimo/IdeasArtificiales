@@ -1,17 +1,17 @@
 # Clasificación de Dígitos MNIST con Redes Neuronales
 
-Este repositorio contiene una implementación de una red neuronal para clasificar dígitos escritos a mano del dataset MNIST, usando TensorFlow/Keras.
+Este repositorio contiene una implementación de una red neuronal para clasificar dígitos escritos a mano del [dataset MNIST](https://es.wikipedia.org/wiki/Base_de_datos_MNIST), usando [TensorFlow/Keras](https://es.wikipedia.org/wiki/Keras).
 
 ## 📋 Contenido del Repositorio
-- `mnist_neural_network.py`: Script principal con la implementación completa
+- `RedesNeuronales.ipynb`: Script principal con la implementación completa
 - `README.md`: Este archivo con la documentación
 
 ## 🧠 Descripción del Modelo
 Implementación de una red neuronal fully-connected (Dense) con:
 - **2 capas ocultas** (128 y 64 neuronas, activación ReLU)
 - **Capa de salida** (10 neuronas, activación softmax)
-- Optimizador: Adam
-- Función de pérdida: Categorical Crossentropy
+- Optimizador: [Adam](https://es.wikipedia.org/wiki/Descenso_de_gradiente_estoc%C3%A1stico#Adam)
+- Función de pérdida: [Categorical Crossentropy](https://keras.io/api/losses/probabilistic_losses/#categoricalcrossentropy-class)
 
 ## 🛠️ Estructura del Código
 
