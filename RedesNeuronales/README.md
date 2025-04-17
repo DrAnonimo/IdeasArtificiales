@@ -21,7 +21,7 @@ Implementación de una red neuronal fully-connected (Dense) con:
 (X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
 ```
 
-# Normalización y reshape
+#### Normalización y reshape
 X_train = X_train.astype("float32") / 255
 X_train = X_train.reshape((60000, 28 * 28))
 
@@ -45,21 +45,21 @@ history = model.fit(X_train, y_train,
 - Evaluación en el conjunto de test
 - Función para probar predicciones individuales
 
-📊 Resultados Esperados
+### 📊 Resultados Esperados
 - Precisión en entrenamiento: ~98%
 - Precisión en validación: ~97%
 - Precisión en test: ~96-97%
 
-🚀 Cómo Ejecutar
+### 🚀 Cómo Ejecutar
 Instalar dependencias:
 ```python
 pip install numpy matplotlib tensorflow
 ```
-Ejecutar el script:
+#### Ejecutar el script:
 ```python
 python mnist_neural_network.py
 ```
-📌 Visualizaciones Incluidas
+#### 📌 Visualizaciones Incluidas
 - Muestra de 10 dígitos del dataset
 - Gráficos de evolución de precisión y pérdida
 - Predicción en una imagen aleatoria de test
