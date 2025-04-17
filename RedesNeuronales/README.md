@@ -19,6 +19,7 @@ Implementación de una red neuronal fully-connected (Dense) con:
 ```python
 # Cargar dataset MNIST
 (X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
+```
 
 # Normalización y reshape
 X_train = X_train.astype("float32") / 255
@@ -31,14 +32,14 @@ model = keras.Sequential([
     layers.Dense(64, activation='relu'),
     layers.Dense(10, activation='softmax')
 ])
-
+```
 ### 3. Ajuste de parámetros
 ```python
 history = model.fit(X_train, y_train,
                     epochs=10,
                     batch_size=64,
                     validation_split=0.2)
-
+```
 ### 4. Evaluación
 - Gráficos de precisión y pérdida durante el entrenamiento
 - Evaluación en el conjunto de test
