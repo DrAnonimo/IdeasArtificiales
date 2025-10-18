@@ -82,9 +82,9 @@ This creates `langgraph_workflow.png` and `langgraph_workflow.svg` showing:
 
 ## Agent's output
 
-================================================================================
-📝 YOUR LINKEDIN POST
-================================================================================
+
+### 📝 YOUR LINKEDIN POST
+
 🚀 As businesses witness tangible returns on AI investments, understanding the strategic frameworks for successful adoption is crucial for staying competitive in a rapidly evolving landscape. 
 
 Recent insights from EY reveal that business leaders are increasingly optimistic about AI, with many planning to ramp up investments despite existing risks related to data infrastructure and ethical frameworks. Companies that strategically deploy AI can 
