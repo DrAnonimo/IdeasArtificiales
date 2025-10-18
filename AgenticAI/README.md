@@ -15,6 +15,9 @@ This project demonstrates an agentic workflow using LangGraph that:
   - `TAVILY_API_KEY`
 
 ### Setup
+
+Create a virtual environment in a folder named `.venv`. It’s an isolated Python setup so your project’s packages don’t affect (or get affected by) system-wide installs. Activate that environment for your current shell. Your `python` and `pip` now point to `.venv`.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
@@ -80,6 +83,9 @@ This creates `langgraph_workflow.png` and `langgraph_workflow.svg` showing:
 - Tavily search is used for fresh results; ensure your key has quota
 - Posts are optimized for professional networks and business discussions
 
+
+### Exit environment
+- When you’re done, run `deactivate` to exit the venv.
 ---
 
 ## Agent's output
