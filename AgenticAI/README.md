@@ -1,5 +1,7 @@
 ## Agentic AI vs Generative AI Demo (LangGraph + Tavily)
 
+<img src="langgraph_workflow.png" alt="DAG" width="250" align="right">
+
 This project demonstrates an agentic workflow using LangGraph that:
 - Searches for LinkedIn-engaging AI news using Tavily (business impact, career relevance, industry trends)
 - Summarizes the 3 most engaging results with professional focus
