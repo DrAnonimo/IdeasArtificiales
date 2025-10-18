@@ -80,6 +80,8 @@ This creates `langgraph_workflow.png` and `langgraph_workflow.svg` showing:
 - Tavily search is used for fresh results; ensure your key has quota
 - Posts are optimized for professional networks and business discussions
 
+---
+
 ## Agent's output
 
 
