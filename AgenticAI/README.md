@@ -97,8 +97,8 @@ How is your organization approaching AI adoption? What strategies are you findin
 
 Read more here: https://www.ey.com/en_us/services/emerging-technologies/five-ai-adoption-strategies-survey 
 
-Labels: #AI #DigitalTransformation #BusinessStrategy #DataManagement #EmergingTechnologies
-================================================================================
+### Labels: #AI #DigitalTransformation #BusinessStrategy #DataManagement #EmergingTechnologies
+---
 
 🔗 Original Article: https://www.ey.com/en_us/services/emerging-technologies/five-ai-adoption-strategies-survey
 Note: The article link is included in the post above for easy access
