@@ -4,6 +4,9 @@
 
 Este repositorio contiene código relacionado con el blog [Ideas Artificiales](https://www.ideas-artificiales.es), donde exploramos conceptos de inteligencia artificial y aprendizaje automático.
 
+¡No te pierdas ninguna novedad! Síguenos en 𝕏 y recibe actualizaciones sobre los últimos avances en IA, debates y publicaciones en el blog.
+
+➡️ [Sígueme en X (Twitter)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fideas-artificiales.es%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ERDOlivaw_&region=follow_link&screen_name=RDOlivaw_)
 
 ## Contenidos del Repositorio
 
