@@ -1,8 +1,8 @@
 # Repositorio de Código - Ideas Artificiales
 
-Este repositorio contiene código relacionado con el blog [Ideas Artificiales](https://www.ideas-artificiales.es), donde exploramos conceptos de inteligencia artificial y aprendizaje automático.
+<img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="300" align="right">
 
-<img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="300">
+Este repositorio contiene código relacionado con el blog [Ideas Artificiales](https://www.ideas-artificiales.es), donde exploramos conceptos de inteligencia artificial y aprendizaje automático.
 
 
 ## Contenidos del Repositorio
