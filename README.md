@@ -17,4 +17,9 @@ Este repositorio contiene código relacionado con el blog [Ideas Artificiales](h
   - Ejemplos de implementación en Python.
   - Visualizaciones y resultados.
 
+  - **[Redes neuronales](https://github.com/DrAnonimo/IdeasArtificiales/tree/AgenticAI/RedesNeuronales)**
+  - Implementación de un algortimo de redes neuronales para la identificación de dígitos escritos a mano.
+  - Ejemplos de implementación en Python.
+  - Visualizaciones y resultados.
+
 Más contenidos y análisis se irán agregando con el tiempo. ¡No dudes en explorar y contribuir!
