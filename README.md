@@ -34,7 +34,7 @@ Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI develop
 - **Modular agent workflow code + state/memory handling**, showing goal-directed execution, conditional routing, and regeneration on failed checks (iterative verification up to a cap).
 - **Docs/assets for running a CLI demo** (figures/workflow description and usage notes) to reproduce the end-to-end process from retrieval → summary → selection → verified post.
 
-More content and analyses will be added over time. Feel free to explore and contribute!
+More content and analyses will be added over time. Feel free to explore and contribute!!
 
 
 
