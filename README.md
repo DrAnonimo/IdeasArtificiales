@@ -33,3 +33,6 @@ Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI develop
 - Docs/assets for running a CLI demo (figures/workflow description and usage notes) to reproduce the end-to-end process from retrieval → summary → selection → verified post.
 
 More content and analyses will be added over time. Feel free to explore and contribute!
+
+**Note:** The original contents of this repository were written in Spanish. Over time, we have transitioned to English to reach a broader audience. As a result, some of the earlier materials remain in Spanish, while newer projects and documentation are now published in English.
+
