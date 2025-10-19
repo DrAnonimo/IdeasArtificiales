@@ -84,7 +84,7 @@ This creates `langgraph_workflow.png` and `langgraph_workflow.svg` showing:
 - Posts are optimized for professional networks and business discussions
 
 
-### Exit environment
+**Important**: Always deactivate the virtual environment after running the CLI:
 - When you’re done, run `deactivate` to exit the venv.
 ---
 
