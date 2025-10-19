@@ -1,13 +1,13 @@
 # Repositorio de Código - Ideas Artificiales
 
-<img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="250" align="right">
+<img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="200" align="right">
 
 This repository contains code related to the blog [Ideas Artificiales](https://ideas-artificiales.es/en/ia_en/)
 , where we explore concepts in artificial intelligence and machine learning.
 
 Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI developments, discussions, and new blog posts.
 
-➡️ [Síguenos en X (Twitter)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fideas-artificiales.es%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ERDOlivaw_en&region=follow_link&screen_name=RDOlivaw_en_)
+➡️ [Follow us in 𝕏 (Twitter)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fideas-artificiales.es%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ERDOlivaw_en&region=follow_link&screen_name=RDOlivaw_en_)
 
 ## Contents
 
