@@ -11,7 +11,7 @@ Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI develop
 
 ## Contents
 
-- **[Anatomy of an Artificial Intelligence Algorithm](https://github.com/DrAnonimo/IdeasArtificiales/tree/main/Anatom%C3%ADaAlgoritmoIA)** (Spanish)
+**[Anatomy of an Artificial Intelligence Algorithm](https://github.com/DrAnonimo/IdeasArtificiales/tree/main/Anatom%C3%ADaAlgoritmoIA)** (Spanish)
 - Detailed explanation of the key components of an AI algorithm.
 - Implementation examples in Python.
 - Visualisations and practical experiments.
