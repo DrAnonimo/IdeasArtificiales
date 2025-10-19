@@ -29,7 +29,7 @@ Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI develop
 - **Python and TensorFlow/Keras code:** Includes model definition, training, evaluation, and performance visualization.
 - **Educational focus:** Demonstrates key deep learning concepts such as activation functions, optimization, and accuracy assessment through clear, reproducible experiments.
 
-**[Agentic AI](https://github.com/DrAnonimo/IdeasArtificiales/tree/AgenticAI/RedesNeuronales)**
+**[Agentic AI](https://github.com/DrAnonimo/IdeasArtificiales/tree/main/AgenticAI)**
 - **LangGraph-based “LinkedIn News Agent”** prototype that searches AI news (via a web search API), summarizes candidates, adds a human-in-the-loop selection, and runs a fact-verification feedback loop before drafting a LinkedIn-ready post.
 - **Modular agent workflow code + state/memory handling**, showing goal-directed execution, conditional routing, and regeneration on failed checks (iterative verification up to a cap).
 - **Docs/assets for running a CLI demo** (figures/workflow description and usage notes) to reproduce the end-to-end process from retrieval → summary → selection → verified post.
