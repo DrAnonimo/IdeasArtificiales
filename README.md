@@ -1,7 +1,7 @@
 # Code repository - Ideas Artificiales
 
-<div align="right">
-  <img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="300">
+<div align="center">
+  <img src="Background.jpeg" alt="Descripción de la imagen">
 </div>
 
 This repository contains code related to the blog [Ideas Artificiales](https://ideas-artificiales.es/en/ia_en/)
