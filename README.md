@@ -1,6 +1,6 @@
 # Code repository - Ideas Artificiales
 
-<img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="250" align="right">
+<img src="RDIsaac.jpeg" alt="Descripción de la imagen" width="300" align="right">
 
 This repository contains code related to the blog [Ideas Artificiales](https://ideas-artificiales.es/en/ia_en/)
 , where we explore concepts in artificial intelligence and machine learning.
