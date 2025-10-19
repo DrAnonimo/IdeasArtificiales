@@ -9,6 +9,8 @@ Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI develop
 
 ➡️ [Follow us in 𝕏 (Twitter)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fideas-artificiales.es%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ERDOlivaw_en&region=follow_link&screen_name=RDOlivaw_en_)
 
+**Note:** The original contents of this repository were written in Spanish. Over time, we have transitioned to English to reach a broader audience. As a result, some of the earlier materials remain in Spanish, while newer projects and documentation are now published in English.
+
 ## Contents
 
 **[Anatomy of an Artificial Intelligence Algorithm](https://github.com/DrAnonimo/IdeasArtificiales/tree/main/Anatom%C3%ADaAlgoritmoIA)** (Spanish)
@@ -34,5 +36,5 @@ Don’t miss any updates! Follow us on 𝕏 to get the latest news on AI develop
 
 More content and analyses will be added over time. Feel free to explore and contribute!
 
-**Note:** The original contents of this repository were written in Spanish. Over time, we have transitioned to English to reach a broader audience. As a result, some of the earlier materials remain in Spanish, while newer projects and documentation are now published in English.
+
 
