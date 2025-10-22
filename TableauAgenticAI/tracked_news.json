@@ -1,238 +1,23 @@
 {
-  "last_updated": "2025-10-22T17:50:24.817504",
+  "last_updated": "2025-10-22T18:34:47.550078",
   "articles": [
     {
-      "title": "AI Valuation Multiples in 2025 - Aventis Advisors",
-      "url": "https://aventis-advisors.com/ai-valuation-multiples/",
-      "content": "So, what are the currentAI company valuations in 2025?\n\nThe median AI pre-money valuations as of 2024 were:\n\n   AI startup raising pre-seed capital would havea median $3.6M valuation\n   AI startup raising seedcapital would havea median $10.0M valuation\n   AI startup raising Series Acapital would havea median $45.7M valuation\n   AI startup raising Series Bcapital would havea median $366.5M valuation\n   AI startup raising Series Ccapital would havea median $795.2M valuation [...] Image 23: A line graph shows median AI funding round sizes from 2010 to H1 2025 for Series A, B, and C. Series C values peak at $95M in 2021; Series B at $37M in 2022; Series A at $15M in 2022. All values are in millions of dollars.\nAI startup valuations – by funding rounds\n\nReflecting the growing interest in AI and the increasing capital requirements to train or use AI, both the median funding round sizes as well as median valuations have been growing over the years. [...] Fundraising rounds price around 25–30x EV/Revenue on median, with top outcomes well above that.\n\n2) How are AI companies valued?\n\nInvestors use EV/Revenue (or EV/ARR) for growth, then adjust for margins, retention, data moats, and capital needs.\n\n3) What is a typical AI startup valuation by stage in 2025?\n\nPre-seed ≈ $3.6m, Seed ≈ $10m, Series A ≈ $45.7m, Series B ≈ $366.5m, Series C ≈ $795.2m (pre-money).\n\n4) What are typical AI funding round sizes in 2025?",
-      "source_query": "AI startup valuations",
-      "score": 0.92005306,
-      "added_date": "2025-10-22T16:41:12.941206",
+      "title": "AI Stocks Surge as NVIDIA Reports Record Revenue",
+      "url": "https://example.com/nvidia-earnings",
+      "content": "NVIDIA Corporation reported record quarterly revenue driven by strong demand for AI chips. The company's stock price surged 15% in after-hours trading, leading to renewed speculation about AI market valuations.",
+      "source_query": "",
+      "score": 0.0,
+      "added_date": "2025-10-22T18:34:46.121887",
       "is_analyzed": true,
       "analysis": {
-        "title": "AI Valuation Multiples in 2025 - Aventis Advisors",
-        "url": "https://aventis-advisors.com/ai-valuation-multiples/",
-        "sentiment_score": 0.5,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
-            "value": 0.0,
-            "weight": 0.25,
-            "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 0.3333333333333333,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.0,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.06666666666666667,
-        "key_phrases": [
-          "tion [...] image 23: a line graph shows median ai funding round sizes from 2010 to h1 2025 for series a, b,",
-          "so, what are the currentai company valuations in 2025?",
-          "2022; series a at $15m in 2022. all values are in millions of dollars.",
-          "ai startup valuations – by funding rounds",
-          "the median ai pre-money valuations as of 2024 were:"
-        ],
-        "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:13.859054"
-      }
-    },
-    {
-      "title": "Top 100 AI Startup Funding & Investment Statistics [2025]",
-      "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/",
-      "content": "This unprecedented capital concentration reflects investor confidence in AI’s transformative potential, though market selectivity has increased significantly, with funding increasingly concentrated among later-stage companies and proven business models.\n\nAccording to PwC’s MoneyTree Report 2024, AI startups now command average valuations 3.2x higher than traditional tech companies, driven by the promise of scalable AI solutions and massive market opportunities. [...] | Metric | 2024 Results | 2023 Comparison | Change | Notable Examples |\n ---  --- \n| New AI Unicorns | 47 | 34 | +38% | Anthropic, Mistral, Adept |\n| Mega-Rounds ($100M+) | 89 | 67 | +33% | OpenAI ($6.6B), Anthropic ($4.0B) |\n| Decacorn Valuations ($10B+) | 12 | 8 | +50% | OpenAI ($80B), Anthropic ($15B) |\n| Average Time to Unicorn | 3.2 years | 4.1 years | -22% | Faster scaling with AI tools |\n| Median Unicorn Valuation | $1.8B | $1.4B | +29% | Premium for AI capabilities | [...] Research from Cambridge Associates indicates that AI-focused funds are generating 2.3x higher returns than traditional tech funds, though with significantly higher variance and capital requirements.\n\n### Frequently Asked Questions\n\n#### Q: Are AI startup valuations sustainable at current levels?",
-      "source_query": "AI startup valuations",
-      "score": 0.9006087,
-      "added_date": "2025-10-22T16:41:12.941225",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "Top 100 AI Startup Funding & Investment Statistics [2025]",
-        "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/",
-        "sentiment_score": 0.6,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
-            "value": 0.2,
-            "weight": 0.25,
-            "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 0.3333333333333333,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.0,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.11666666666666667,
-        "key_phrases": [
-          "tree report 2024, ai startups now command average valuations 3.2x higher than traditional tech companies, dri",
-          "this unprecedented capital concentration reflects investor confidenc",
-          "ket selectivity has increased significantly, with funding increasingly concentrated among later-stage compa",
-          "| decacorn valuations ($10b+) | 12 | 8 | +50% | openai ($80b), anthrop",
-          "| new ai unicorns | 47 | 34 | +38% | anthropic, mistral, adept |",
-          "| average time to unicorn | 3.2 years | 4.1 years | -22% | faster scaling w",
-          "oncentration reflects investor confidence in ai’s transformative potential, though market selectivity has increase"
-        ],
-        "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:14.546063"
-      }
-    },
-    {
-      "title": "The Essential AI Startup Funding Guide 2025: Strategies for Success",
-      "url": "https://www.dealmaker.tech/content/the-essential-ai-startup-funding-guide-2025-strategies-for-success",
-      "content": "According to Standard Metrics' Q3 2024 Benchmarking Report and Aventis Advisors' analysis, the median AI startup fetches valuation multiples that are 25–40% higher than non-AI peers, with the most speculative companies commanding premiums of 200× annual revenue.\n\n‍ [...] The implications are clear: venture capital is being realigned around AI, and the companies that define the next phase of this technology wave will be shaped by this intense early investment cycle.\n\n‍\n\n### Sky-High Valuations: The New Normal\n\nAI startups today command significantly higher valuations than their traditional software counterparts, often trading at revenue multiples that seem almost surreal.\n\n‍ [...] | Start Date | End Date | Type | Platform | Amount Raised | # Investors |\n ---  ---  --- |\n| 3/13/19 | 3/31/20 | A+ | SeedInvest | $14,588,668 | 6,000 |\n| 11/16/20 | 1/16/21 | A+ | StartEngine | $2,965,501 | 8,000 |\n| 1/17/21 | 2/18/22 | A+ | StartEngine | $23,647,853 | 14,082 |\n| 7/15/22 | 3/16/23 | CF | DealMaker | $4,673,000 | 2,249 |\n| 3/1/23 | 4/8/23 | A+ | Republic | $232,275 | 120 |\n| 3/1/23 | 5/23/23 | A+ | DealMaker | $15,958,364 | 5,198 |\n| 5/18/23  Nasdaq listing |",
-      "source_query": "AI startup valuations",
-      "score": 0.8958969,
-      "added_date": "2025-10-22T16:41:12.941232",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "The Essential AI Startup Funding Guide 2025: Strategies for Success",
-        "url": "https://www.dealmaker.tech/content/the-essential-ai-startup-funding-guide-2025-strategies-for-success",
+        "title": "AI Stocks Surge as NVIDIA Reports Record Revenue",
+        "url": "https://example.com/nvidia-earnings",
         "sentiment_score": 0.7,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
-            "value": 0.0,
-            "weight": 0.25,
-            "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 0.3333333333333333,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.0625,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.1,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.09416666666666666,
-        "key_phrases": [
-          "advisors' analysis, the median ai startup fetches valuation multiples that are 25–40% higher than non-ai peer",
-          "‍ [...] the implications are clear: venture capital is being realigned around ai, and the companies t",
-          "hnology wave will be shaped by this intense early investment cycle.",
-          "### sky-high valuations: the new normal",
-          "ntly higher valuations than their traditional software counterparts, often trading at revenue multiples"
-        ],
-        "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:15.203893"
-      }
-    },
-    {
-      "title": "AI startup valuations raise bubble fears as funding surges - Reuters",
-      "url": "https://www.reuters.com/legal/transactional/ai-startup-valuations-raise-bubble-fears-funding-surges-2025-10-03/",
-      "content": "\"Any company startup with an AI label will be valued right up there at huge multiples of whatever the small revenue (is),\" he said. \"That might be fair for some companies and probably not for others.\"\n\nIn the first quarter of 2025, AI startups raised $73.1 billion globally, accounting for 57.9% of all venture capital funding, according to PitchBook. The surge was driven by funding rounds like OpenAI's $40 billion capital raising, as investors raced to catch the AI wave. [...] Some AI firms are hitting $100 million in revenue within months, he said, while others in early-stage ventures command valuations at between $400 million and $1.2 billion per employee. He said that was \"breathtaking.\"\n\nReporting by Yantoultra Ngui; Editing by Thomas Derpinghaus.\n\nOur Standards: The Thomson Reuters Trust Principles., opens new tab\n\n   Suggested Topics:\n   Artificial Intelligence\n   Capital Markets\n\n    \n    \n    \n    \n    \n\nPurchase Licensing Rights [...] AI startup valuations raise bubble fears as funding surges | Reuters\n\nSkip to main content\n\nReport This Ad\n\nExclusive news, data and analytics for financial market professionals Learn more about Refinitiv\n\n - Artificial intelligence startups are attracting record sums of venture capital, but some of the world's largest investors warned that early-stage valuations are starting to look frothy, senior investment executives said on Friday.",
-      "source_query": "AI startup valuations",
-      "score": 0.8815438,
-      "added_date": "2025-10-22T16:41:12.941238",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "AI startup valuations raise bubble fears as funding surges - Reuters",
-        "url": "https://www.reuters.com/legal/transactional/ai-startup-valuations-raise-bubble-fears-funding-surges-2025-10-03/",
-        "sentiment_score": -0.5,
         "bubble_indicators": [
           {
             "name": "hype_level",
             "value": 0.4,
-            "weight": 0.25,
+            "weight": 0.2,
             "trend": "decreasing",
             "description": "Level of hype and superlative language in the article",
             "threshold": 0.7,
@@ -240,93 +25,17 @@
           },
           {
             "name": "investment_frenzy",
-            "value": 1.0,
-            "weight": 0.2,
-            "trend": "increasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": true
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.1875,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.2,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.4675,
-        "key_phrases": [
-          "penai's $40 billion capital raising, as investors raced to catch the ai wave. [...] some ai firms are hi",
-          " startup valuations raise bubble fears as funding surges | reuters",
-          "e first quarter of 2025, ai startups raised $73.1 billion globally, accounting for 57.9% of all venture cap",
-          "ally, accounting for 57.9% of all venture capital funding, according to pitchbook. the surge was driven by ",
-          "purchase licensing rights [...] ai startup valuations raise bubble fears as funding surges | reuters",
-          "ge was driven by funding rounds like openai's $40 billion capital raising, as investors raced to catch the ",
-          "aid, while others in early-stage ventures command valuations at between $400 million and $1.2 billion per emp",
-          "funding rounds like openai's $40 billion capital raising,",
-          "the ai wave. [...] some ai firms are hitting $100 million in revenue within months, he said, while others i",
-          "stage ventures command valuations at between $400 million and $1.2 billion per employee. he said that was \""
-        ],
-        "market_impact": "Pessimistic - Low sentiment and market concerns",
-        "analysis_date": "2025-10-22T17:50:16.494506"
-      }
-    },
-    {
-      "title": "AI startup valuations raise bubble fears as funding surges",
-      "url": "https://finance.yahoo.com/news/ai-startup-valuations-raise-bubble-074846305.html",
-      "content": "Some AI firms are hitting $100 million in revenue within months, he said, while others in early-stage ventures command valuations at between $400 million and $1.2 billion per employee. He said that was \"breathtaking.\"\n\n(Reporting by Yantoultra Ngui; Editing by Thomas Derpinghaus.)\n\nTerms  and Privacy Policy\n\nPrivacy Dashboard\n\nMore Info\n\n ---\n\n ---\n\n ---\n\n ---\n\n## Recommended Stories [...] In the first quarter of 2025, AI startups raised $73.1 billion globally, accounting for 57.9% of all venture capital funding, according to PitchBook. The surge was driven by funding rounds like OpenAI's (OPAI.PVT) $40 billion capital raising, as investors raced to catch the AI wave. [...] Skip to navigation  Skip to main content  Skip to right column    \n\n# AI startup valuations raise bubble fears as funding surges\n\nYantoultra Ngui\n\n2 min read\n\nIn this article:\n\nOPAI.PVT\n\nBy Yantoultra Ngui\n\nSINGAPORE (Reuters) -Artificial intelligence startups are attracting record sums of venture capital, but some of the world's largest investors warned that early-stage valuations are starting to look frothy, senior investment executives said on Friday.",
-      "source_query": "AI startup valuations",
-      "score": 0.8732259,
-      "added_date": "2025-10-22T17:47:12.572209",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "AI startup valuations raise bubble fears as funding surges",
-        "url": "https://finance.yahoo.com/news/ai-startup-valuations-raise-bubble-074846305.html",
-        "sentiment_score": -0.5,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
             "value": 0.4,
-            "weight": 0.25,
+            "weight": 0.15,
             "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 1.0,
-            "weight": 0.2,
-            "trend": "increasing",
             "description": "Intensity of investment and funding discussions",
             "threshold": 0.6,
-            "is_concerning": true
+            "is_concerning": false
           },
           {
             "name": "market_speculation",
             "value": 0.125,
-            "weight": 0.2,
+            "weight": 0.15,
             "trend": "decreasing",
             "description": "Level of market speculation and future predictions",
             "threshold": 0.5,
@@ -334,8 +43,8 @@
           },
           {
             "name": "competitive_intensity",
-            "value": 0.2,
-            "weight": 0.15,
+            "value": 0.0,
+            "weight": 0.1,
             "trend": "decreasing",
             "description": "Intensity of competitive dynamics mentioned",
             "threshold": 0.6,
@@ -343,267 +52,68 @@
           },
           {
             "name": "regulatory_concern",
-            "value": 0.125,
-            "weight": 0.2,
+            "value": 0.0,
+            "weight": 0.15,
             "trend": "decreasing",
             "description": "Level of regulatory concerns and risks mentioned",
             "threshold": 0.4,
             "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.48,
-        "key_phrases": [
-          "funding rounds like openai's (opai.pvt) $40 billion capit",
-          "ai.pvt) $40 billion capital raising, as investors raced to catch the ai wave. [...] skip to navigation  ",
-          "ture capital funding, according to pitchbook. the surge was driven by funding rounds like openai's (opai.",
-          "e first quarter of 2025, ai startups raised $73.1 billion globally, accounting for 57.9% of all venture cap",
-          "ally, accounting for 57.9% of all venture capital funding, according to pitchbook. the surge was driven by ",
-          "# ai startup valuations raise bubble fears as funding surges",
-          "stage ventures command valuations at between $400 million and $1.2 billion per employee. he said that was \"",
-          "aid, while others in early-stage ventures command valuations at between $400 million and $1.2 billion per emp",
-          "terms  and privacy policy",
-          "some ai firms are hitting $100 million in revenue within months, he said, while others i"
-        ],
-        "market_impact": "Pessimistic - Low sentiment and market concerns",
-        "analysis_date": "2025-10-22T17:50:17.211991"
-      }
-    },
-    {
-      "title": "Latest AI Startup Funding News and VC Investment Deals - 2025",
-      "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
-      "content": "Details: Cohere, a Toronto-based generative AI startup founded by ex-Google researchers, has secured $500 million at a $6.8 billion valuation, aiming to accelerate global expansion and advance agentic AI tailored for enterprise deployments behind corporate firewalls.The company has also appointed Joelle Pineau, former VP of AI Research at Meta, as Chief AI Officer, and Francois Chadwick, with experience at Uber and Shield AI, as Chief Financial Officer.Cohere continues to focus on privacy [...] ### Mistral Eyes $10B Valuation in New Funding Push\n\n   When: August 2025\n   Recipient Company: Mistral\n   Investors: Abu Dhabi’s MGX fund (reportedly involved), others in talks\n   Details: Paris-based open-source AI startup Mistral is aiming to raise nearly $1 billion at a $10 billion valuation. The company plans to scale its LLM development and fund its €8.5 billion data center project, in partnership with Nvidia and BPI France.\n   Reference:PYMNTS [...] When: May 2025\n   Recipient Company: Samaya\n   Investors: Coatue, Founders Fund, and others\n   Details: Samaya, a generative AI startup in the financial services space, raised $43.5 million in seed and Series A rounds. The company aims to automate internal operations and enhance client-facing services using secure, domain-specific AI agents tailored for the compliance-heavy finance industry.\n   Reference:Fortune\n\n### CAST AI Raises $108M at $850M Valuation to Optimize Cloud Costs with AI",
-      "source_query": "AI startup valuations",
-      "score": 0.854509,
-      "added_date": "2025-10-22T16:41:12.941243",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "Latest AI Startup Funding News and VC Investment Deals - 2025",
-        "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
-        "sentiment_score": 0.7,
-        "bubble_indicators": [
+          },
           {
-            "name": "hype_level",
+            "name": "market_momentum",
             "value": 0.0,
-            "weight": 0.25,
+            "weight": 0.1,
             "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
+            "description": "Unknown indicator",
+            "threshold": 0.6,
+            "is_concerning": false
+          },
+          {
+            "name": "volatility_risk",
+            "value": 0.0,
+            "weight": 0.1,
+            "trend": "decreasing",
+            "description": "Unknown indicator",
+            "threshold": 0.5,
+            "is_concerning": false
+          },
+          {
+            "name": "valuation_concern",
+            "value": 0.0,
+            "weight": 0.05,
+            "trend": "decreasing",
+            "description": "Unknown indicator",
             "threshold": 0.7,
             "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 1.0,
-            "weight": 0.2,
-            "trend": "increasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": true
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.0,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.125,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
           }
         ],
-        "overall_bubble_risk": 0.325,
+        "overall_bubble_risk": 0.15875,
         "key_phrases": [
-          "chers, has secured $500 million at a $6.8 billion valuation, aiming to accelerate global expansion and advanc",
-          "e ai startup mistral is aiming to raise nearly $1 billion at a $10 billion valuation. the company plans to ",
-          "tup in the financial services space, raised $43.5 million in seed and series a rounds. the company aims to ",
-          "ounded by ex-google researchers, has secured $500 million at a $6.8 billion valuation, aiming to accelerate",
-          "e researchers, has secured $500 million at a $6.8 billion valuation, aiming to accelerate global expansion ",
-          "vacy [...] ### mistral eyes $10b valuation in new funding push",
-          "s to focus on privacy [...] ### mistral eyes $10b valuation in new funding push",
-          "ecure, domain-specific ai agents tailored for the compliance-heavy finance industry."
+          "ng demand for ai chips. the company's stock price surged 15% in after-hours trading, leading to renewed s",
+          "ed 15% in after-hours trading, leading to renewed speculation about ai market valuations.",
+          "g, leading to renewed speculation about ai market valuations."
         ],
         "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:22.381017"
+        "analysis_date": "2025-10-22T18:34:46.954661"
       }
     },
     {
-      "title": "MythWorx Rockets Ahead: AI/AGI Startup Closes $5M Seed Round ...",
-      "url": "https://finance.yahoo.com/news/mythworx-rockets-ahead-ai-agi-132000248.html",
-      "content": "DALLAS, October 22, 2025--(BUSINESS WIRE)--MythWorx, a next-generation AI startup with a unique AI/AGI construct and architecture and pioneering reasoning capabilities, announced today it closed its seed funding round of $5 million at a $100 million valuation led by Eagle Venture Fund IV, Eagle Freedom Fund I, and Eagle Freedom Fund II, along with investment from other leading angel investors. The valuation is significantly higher than other seed-stage AI startups, reflecting the groundbreaking [...] Skip to navigation  Skip to main content  Skip to right column    \n\nThis is a paid press release. Contact the press release distributor directly with any inquiries.\n\n# MythWorx Rockets Ahead: AI/AGI Startup Closes $5M Seed Round at $100M Valuation\n\nBusiness Wire\n\n3 min read\n\nMythWorx’s model achieved a perfect 100% score on the ARC-AGI-1 benchmark without any pre-training and using only 208 watts—dramatically outperforming all other LLMs while requiring only a fraction of their compute effort",
-      "source_query": "AI startup valuations",
-      "score": 0.8405867,
-      "added_date": "2025-10-22T17:47:12.572213",
+      "title": "Tech Giants Invest Billions in AI Infrastructure",
+      "url": "https://example.com/ai-investments",
+      "content": "Microsoft, Google, and Amazon announced combined investments of over $50 billion in AI infrastructure. This massive capital injection has raised concerns about potential overinvestment in the AI sector.",
+      "source_query": "",
+      "score": 0.0,
+      "added_date": "2025-10-22T18:34:46.122308",
       "is_analyzed": true,
       "analysis": {
-        "title": "MythWorx Rockets Ahead: AI/AGI Startup Closes $5M Seed Round ...",
-        "url": "https://finance.yahoo.com/news/mythworx-rockets-ahead-ai-agi-132000248.html",
-        "sentiment_score": 0.7,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
-            "value": 0.0,
-            "weight": 0.25,
-            "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 0.6,
-            "weight": 0.2,
-            "trend": "stable",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.0,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.12,
-        "key_phrases": [
-          " capabilities, announced today it closed its seed funding round of $5 million at a $100 million valuation l",
-          "eed funding round of $5 million at a $100 million valuation led by eagle venture fund iv, eagle freedom fund ",
-          "dom fund i, and eagle freedom fund ii, along with investment from other leading angel investors. the valuation",
-          "nvestment from other leading angel investors. the valuation is significantly higher than other seed-stage ai ",
-          "nced today it closed its seed funding round of $5 million at a $100 million valuation led by eagle venture "
-        ],
-        "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:22.984736"
-      }
-    },
-    {
-      "title": "AI: Boom? Bust? Or Both? - Neuberger Berman",
-      "url": "https://www.nb.com/en/global/insights/cio-weekly-perspectives-ai-boom-bust-or-both",
-      "content": "Over the past few years, the AI investment boom and its transformative promise have more broadly propelled the S&P 500 index to all-time highs, almost entirely driven by the advance of the mega-cap technology companies.\n\nSuch a frenzy inevitably raises several questions: Is this a classic asset bubble poised to burst? A catalyst for profound economic and social change? Or some combination of both? [...] Amid the AI frenzy are some early signs of the technology’s positive impact on productivity, raising profound implications for growth, inflation, labor markets, and asset prices.\n\nWhile striking, the recent 40% rise in the share price of a chipmaker on it agreeing a multi-billion dollar deal with a leading AI company is just the latest demonstration of the technology’s power in equity markets. [...] Meanwhile, companies that can translate AI into measurable efficiencies can sustain higher profitability, in turn driving selective outperformance, with a premium on actual adoption and demonstrable return on AI investment.\n\nIt may be early days, but there are clear signs we are heading in that direction irrespective of whether there is an “AI bubble” for those tech stocks most directly tied to this transformational capability.\n\n### What to Watch For\n\n Thursday 10/16:",
-      "source_query": "AI investment frenzy",
-      "score": 0.8127637,
-      "added_date": "2025-10-22T17:47:12.572215",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "AI: Boom? Bust? Or Both? - Neuberger Berman",
-        "url": "https://www.nb.com/en/global/insights/cio-weekly-perspectives-ai-boom-bust-or-both",
-        "sentiment_score": 0.5,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
-            "value": 0.1,
-            "weight": 0.25,
-            "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 0.3333333333333333,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.25,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.0,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.14166666666666666,
-        "key_phrases": [
-          "direction irrespective of whether there is an “ai bubble” for those tech stocks most directly tied to this",
-          "share price of a chipmaker on it agreeing a multi-billion dollar deal with a leading ai company is just the",
-          "he past few years, the ai investment boom and its transformative promise have more broadly propelled the s&p 500 i",
-          "over the past few years, the ai investment boom and its transformative promise have more bro",
-          "such a frenzy inevitably raises several questions: is this a cl",
-          " on actual adoption and demonstrable return on ai investment.",
-          "e? or some combination of both? [...] amid the ai frenzy are some early signs of the technology’s positive",
-          "raises several questions: is this a classic asset bubble poised to burst? a catalyst for profound economic"
-        ],
-        "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:23.680014"
-      }
-    },
-    {
-      "title": "Startup Funding Outlook: VCs 'Chasing The AI Wave' But With Caution",
-      "url": "https://news.crunchbase.com/venture/startup-funding-ai-ipo-outlook-h2-2025/",
-      "content": "Indeed, AI companies are raising rounds in rapid succession, and thus significantly increasing their valuations in short periods of time. Anthropic, for example, saw its valuation jump from $60 billion to $170 billion in the span of six months.\n\n“There are many examples of AI companies raising follow-on rounds in six to 12 months versus the more standard two years or more,” Murphy said.\n\nHowever, he expects that it’s inevitable that there will be some “overfunding.” [...] “The craziness of certain AI have and have-nots are pushing valuations to unprecedented levels, which are akin to 2021, frankly, especially for B2B/enterprise AI companies,” he added.\n\nStill, the broader reset in valuations over the past two years has created a healthier foundation, in his view. [...] Startup Funding Regained Its Footing In 2024 As AI Became The Star Of The Show\n   Q2 Global Venture Funding Climbs In A Blockbuster Quarter For AI And As Capital Concentrates In Larger Companies\n   The State Of Startups In Mid-2025 In 8 Charts: Global Funding And M&A Surge As AI Fervor Continues\n   Menlo Ventures And Anthropic Open $100M Fund\n   Report: Anthropic Raising $5B At A $170B Valuation As AI Funding Heats Up\n\nImage 5\n\nTagsAIstartupsunicornventure",
-      "source_query": "AI startup valuations",
-      "score": 0.8055255,
-      "added_date": "2025-10-22T17:47:12.572217",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "Startup Funding Outlook: VCs 'Chasing The AI Wave' But With Caution",
-        "url": "https://news.crunchbase.com/venture/startup-funding-ai-ipo-outlook-h2-2025/",
+        "title": "Tech Giants Invest Billions in AI Infrastructure",
+        "url": "https://example.com/ai-investments",
         "sentiment_score": 0.2,
         "bubble_indicators": [
           {
             "name": "hype_level",
-            "value": 0.2,
-            "weight": 0.25,
+            "value": 0.0,
+            "weight": 0.2,
             "trend": "decreasing",
             "description": "Level of hype and superlative language in the article",
             "threshold": 0.7,
@@ -611,17 +121,17 @@
           },
           {
             "name": "investment_frenzy",
-            "value": 0.6,
-            "weight": 0.2,
-            "trend": "stable",
+            "value": 0.26666666666666666,
+            "weight": 0.15,
+            "trend": "decreasing",
             "description": "Intensity of investment and funding discussions",
             "threshold": 0.6,
             "is_concerning": false
           },
           {
             "name": "market_speculation",
-            "value": 0.0625,
-            "weight": 0.2,
+            "value": 0.0,
+            "weight": 0.15,
             "trend": "decreasing",
             "description": "Level of market speculation and future predictions",
             "threshold": 0.5,
@@ -630,7 +140,7 @@
           {
             "name": "competitive_intensity",
             "value": 0.0,
-            "weight": 0.15,
+            "weight": 0.1,
             "trend": "decreasing",
             "description": "Intensity of competitive dynamics mentioned",
             "threshold": 0.6,
@@ -638,97 +148,49 @@
           },
           {
             "name": "regulatory_concern",
-            "value": 0.0,
-            "weight": 0.2,
+            "value": 0.0625,
+            "weight": 0.15,
             "trend": "decreasing",
             "description": "Level of regulatory concerns and risks mentioned",
             "threshold": 0.4,
             "is_concerning": false
+          },
+          {
+            "name": "market_momentum",
+            "value": 0.0,
+            "weight": 0.1,
+            "trend": "decreasing",
+            "description": "Unknown indicator",
+            "threshold": 0.6,
+            "is_concerning": false
+          },
+          {
+            "name": "volatility_risk",
+            "value": 0.0,
+            "weight": 0.1,
+            "trend": "decreasing",
+            "description": "Unknown indicator",
+            "threshold": 0.5,
+            "is_concerning": false
+          },
+          {
+            "name": "valuation_concern",
+            "value": 0.0,
+            "weight": 0.05,
+            "trend": "decreasing",
+            "description": "Unknown indicator",
+            "threshold": 0.7,
+            "is_concerning": false
           }
         ],
-        "overall_bubble_risk": 0.1825,
+        "overall_bubble_risk": 0.049375,
         "key_phrases": [
-          "n ai have and have-nots are pushing valuations to unprecedented levels, which are akin to 2021, frankly, especial",
-          "tagsaistartupsunicornventure",
-          ", saw its valuation jump from $60 billion to $170 billion in the span",
-          "that it’s inevitable that there will be some “overfunding.” [...] “the craziness of certain ai have and hav",
-          "s in mid-2025 in 8 charts: global funding and m&a surge as ai fervor continues",
-          " healthier foundation, in his view. [...] startup funding regained its footing in 2024 as ai became the sta",
-          "pic, for example, saw its valuation jump from $60 billion to $170 billion in the span of six months.",
-          "ccession, and thus significantly increasing their valuations in short periods of time. anthropic, for example"
+          "microsoft, google, and amazon announced combined investments of over $50 billion in ai infrastructure. this m",
+          "amazon announced combined investments of over $50 billion in ai infrastructure. this massive capital inject",
+          "injection has raised concerns about potential overinvestment in the ai sector."
         ],
         "market_impact": "Neutral - Balanced market sentiment",
-        "analysis_date": "2025-10-22T17:50:24.091608"
-      }
-    },
-    {
-      "title": "What we mean when we talk about an artificial intelligence 'bubble'",
-      "url": "https://www.weforum.org/stories/2025/10/artificial-intelligence-bubble-dot-com-tulip-mania/",
-      "content": "Peaks in “AI bubble”-related content correspond to head-turning news events. There was the CEO of Chinese search giant Baidu comparing the current situation to the dot-com era in October 2024. Then Ray Dalio, an investor who predicted the global financial crisis, made his own connection between AI exuberance and the dot-com days in January. The gist of The AI Con, a book published in June, is probably evident from its title. By the time OpenAI CEO Sam Altman cited the beginnings of a bubble in [...] Meanwhile companies are racking up more debt to stay at AI’s forefront. It’s not just investors like retirement funds with a lot at stake. Even if the cadre of big companies at its center weather yet another burst bubble, there are layers of smaller firms, shareholders, and livelihoods likely to vanish. Dormant data centers could become the new abandoned shopping malls. [...] It’s concentrated risk, though it could have a broad impact. If this small group of companies pushing genuine innovation forward nonetheless fall short, well-heeled investors backing them may dump their stocks at a loss and start feeling skint. That could hinder the kind of consumer spending that can fuel an entire economy’s growth.\n\n## Tech stocks, tulips and fairy tales",
-      "source_query": "AI bubble 2024",
-      "score": 0.7971311,
-      "added_date": "2025-10-22T17:47:12.572219",
-      "is_analyzed": true,
-      "analysis": {
-        "title": "What we mean when we talk about an artificial intelligence 'bubble'",
-        "url": "https://www.weforum.org/stories/2025/10/artificial-intelligence-bubble-dot-com-tulip-mania/",
-        "sentiment_score": -0.5,
-        "bubble_indicators": [
-          {
-            "name": "hype_level",
-            "value": 0.0,
-            "weight": 0.25,
-            "trend": "decreasing",
-            "description": "Level of hype and superlative language in the article",
-            "threshold": 0.7,
-            "is_concerning": false
-          },
-          {
-            "name": "investment_frenzy",
-            "value": 0.06666666666666667,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Intensity of investment and funding discussions",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "market_speculation",
-            "value": 0.125,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of market speculation and future predictions",
-            "threshold": 0.5,
-            "is_concerning": false
-          },
-          {
-            "name": "competitive_intensity",
-            "value": 0.1,
-            "weight": 0.15,
-            "trend": "decreasing",
-            "description": "Intensity of competitive dynamics mentioned",
-            "threshold": 0.6,
-            "is_concerning": false
-          },
-          {
-            "name": "regulatory_concern",
-            "value": 0.1875,
-            "weight": 0.2,
-            "trend": "decreasing",
-            "description": "Level of regulatory concerns and risks mentioned",
-            "threshold": 0.4,
-            "is_concerning": false
-          }
-        ],
-        "overall_bubble_risk": 0.09083333333333334,
-        "key_phrases": [
-          "peaks in “ai bubble”-related content correspond to head-turning news ",
-          " group of companies pushing genuine innovation forward nonetheless fall short, well-heeled investors ba",
-          "anish. dormant data centers could become the new abandoned shopping malls. [...] it’s concentrated risk",
-          "e openai ceo sam altman cited the beginnings of a bubble in [...] meanwhile companies are racking up more "
-        ],
-        "market_impact": "Pessimistic - Low sentiment and market concerns",
-        "analysis_date": "2025-10-22T17:50:24.817470"
+        "analysis_date": "2025-10-22T18:34:47.550064"
       }
     }
   ]

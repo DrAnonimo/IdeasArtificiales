@@ -7,8 +7,12 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 try:
     from .config import make_llm
+    from .financial_data_collector import FinancialDataCollector
+    from .financial_indicators import FinancialIndicatorsSystem
 except ImportError:
     from config import make_llm
+    from financial_data_collector import FinancialDataCollector
+    from financial_indicators import FinancialIndicatorsSystem
 
 
 @dataclass
@@ -41,6 +45,8 @@ class AIBubbleAnalyzer:
     
     def __init__(self):
         self.llm = make_llm()
+        self.financial_collector = FinancialDataCollector()
+        self.financial_indicators = FinancialIndicatorsSystem()
         self.bubble_keywords = {
             'hype': ['revolutionary', 'breakthrough', 'game-changer', 'disruptive', 'transformative', 
                     'unprecedented', 'explosive growth', 'skyrocketing', 'soaring', 'surge'],
@@ -55,11 +61,15 @@ class AIBubbleAnalyzer:
         }
         
         self.bubble_indicators = {
-            'hype_level': {'weight': 0.25, 'threshold': 0.7},
-            'investment_frenzy': {'weight': 0.20, 'threshold': 0.6},
-            'market_speculation': {'weight': 0.20, 'threshold': 0.5},
-            'competitive_intensity': {'weight': 0.15, 'threshold': 0.6},
-            'regulatory_concern': {'weight': 0.20, 'threshold': 0.4}
+            'hype_level': {'weight': 0.20, 'threshold': 0.7},
+            'investment_frenzy': {'weight': 0.15, 'threshold': 0.6},
+            'market_speculation': {'weight': 0.15, 'threshold': 0.5},
+            'competitive_intensity': {'weight': 0.10, 'threshold': 0.6},
+            'regulatory_concern': {'weight': 0.15, 'threshold': 0.4},
+            # New financial indicators
+            'market_momentum': {'weight': 0.10, 'threshold': 0.6},
+            'volatility_risk': {'weight': 0.10, 'threshold': 0.5},
+            'valuation_concern': {'weight': 0.05, 'threshold': 0.7}
         }
 
     def analyze_news_article(self, title: str, content: str, url: str) -> NewsAnalysis:
@@ -88,6 +98,241 @@ class AIBubbleAnalyzer:
             market_impact=market_impact,
             analysis_date=datetime.now()
         )
+    
+    def analyze_with_financial_data(self, articles: List[Dict[str, Any]], historical_snapshots: List[Dict[str, Any]] = None) -> Dict[str, Any]:
+        """Analyze articles with comprehensive financial data integration"""
+        try:
+            # Collect financial data
+            stock_data = self.financial_collector.collect_stock_data(days=30)
+            market_indices = self.financial_collector.collect_market_indices()
+            
+            # Calculate basic financial indicators
+            financial_indicators = self.financial_collector.calculate_financial_indicators(stock_data, market_indices)
+            
+            # Calculate comprehensive financial indicators
+            comprehensive_indicators = self.financial_indicators.calculate_all_indicators(
+                stock_data, market_indices, historical_snapshots
+            )
+            
+            # Analyze articles
+            article_analyses = []
+            for article in articles:
+                analysis = self.analyze_news_article(
+                    title=article.get("title", ""),
+                    content=article.get("content", ""),
+                    url=article.get("url", "")
+                )
+                article_analyses.append(analysis)
+            
+            # Calculate combined bubble risk
+            article_risks = [analysis.overall_bubble_risk for analysis in article_analyses]
+            avg_article_risk = sum(article_risks) / len(article_risks) if article_risks else 0
+            
+            # Get comprehensive financial risk
+            comprehensive_risk = self.financial_indicators.get_combined_risk_score()
+            
+            # Weighted combination (60% article analysis, 40% comprehensive financial data)
+            combined_risk = (avg_article_risk * 0.6) + (comprehensive_risk * 0.4)
+            
+            # Get comprehensive financial KPIs
+            comprehensive_kpis = self._convert_indicators_to_kpis(comprehensive_indicators)
+            
+            # Get indicator summary
+            indicator_summary = self.financial_indicators.get_indicator_summary()
+            
+            return {
+                "article_analyses": [self._analysis_to_dict(analysis) for analysis in article_analyses],
+                "financial_data": {
+                    "stock_data": {ticker: self._stock_to_dict(stock) for ticker, stock in stock_data.items()},
+                    "market_indices": {
+                        "sp500": market_indices.sp500,
+                        "nasdaq": market_indices.nasdaq,
+                        "vix": market_indices.vix,
+                        "treasury_10y": market_indices.treasury_10y,
+                        "dollar_index": market_indices.dollar_index
+                    },
+                    "financial_indicators": financial_indicators,
+                    "comprehensive_indicators": {name: self._indicator_to_dict(ind) for name, ind in comprehensive_indicators.items()}
+                },
+                "combined_bubble_risk": combined_risk,
+                "article_bubble_risk": avg_article_risk,
+                "financial_bubble_risk": comprehensive_risk,
+                "financial_kpis": comprehensive_kpis,
+                "enhanced_indicators": self._create_enhanced_indicators(article_analyses, financial_indicators),
+                "indicator_summary": indicator_summary,
+                "concerning_indicators": [self._indicator_to_dict(ind) for ind in self.financial_indicators.get_concerning_indicators()],
+                "top_indicators": [self._indicator_to_dict(ind) for ind in self.financial_indicators.get_top_indicators(5)]
+            }
+            
+        except Exception as e:
+            print(f"Error in comprehensive financial analysis: {e}")
+            # Fallback to regular analysis
+            return self._fallback_analysis(articles)
+    
+    def _calculate_financial_kpis(self, financial_indicators: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Calculate financial KPIs for bubble analysis"""
+        kpis = []
+        
+        # Market momentum KPI
+        momentum_30d = financial_indicators.get('momentum_30d', 0)
+        kpis.append({
+            "name": "market_momentum",
+            "value": momentum_30d,
+            "weight": 0.10,
+            "threshold": 0.6,
+            "description": "AI stock market momentum over 30 days",
+            "is_concerning": momentum_30d > 0.6,
+            "trend": "increasing" if momentum_30d > 0.5 else "decreasing"
+        })
+        
+        # Volatility risk KPI
+        volatility_risk = financial_indicators.get('volatility_risk', 0)
+        kpis.append({
+            "name": "volatility_risk",
+            "value": volatility_risk,
+            "weight": 0.10,
+            "threshold": 0.5,
+            "description": "Market volatility risk indicator",
+            "is_concerning": volatility_risk > 0.5,
+            "trend": "increasing" if volatility_risk > 0.3 else "decreasing"
+        })
+        
+        # Valuation concern KPI
+        ai_performance = financial_indicators.get('ai_stock_performance_30d', 0)
+        valuation_concern = min(max(ai_performance / 20.0, 0), 1)  # Normalize to 0-1
+        kpis.append({
+            "name": "valuation_concern",
+            "value": valuation_concern,
+            "weight": 0.05,
+            "threshold": 0.7,
+            "description": "AI stock valuation concern based on performance",
+            "is_concerning": valuation_concern > 0.7,
+            "trend": "increasing" if valuation_concern > 0.5 else "decreasing"
+        })
+        
+        return kpis
+    
+    def _create_enhanced_indicators(self, article_analyses: List[NewsAnalysis], financial_indicators: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Create enhanced indicators combining article and financial data"""
+        enhanced_indicators = []
+        
+        # Get financial KPIs
+        financial_kpis = self._calculate_financial_kpis(financial_indicators)
+        
+        # Add financial KPIs to enhanced indicators
+        for kpi in financial_kpis:
+            enhanced_indicators.append(kpi)
+        
+        # Add traditional indicators from articles
+        if article_analyses:
+            # Calculate average traditional indicators
+            traditional_indicators = {}
+            for analysis in article_analyses:
+                for indicator in analysis.bubble_indicators:
+                    name = indicator['name']
+                    if name not in traditional_indicators:
+                        traditional_indicators[name] = []
+                    traditional_indicators[name].append(indicator['value'])
+            
+            # Create enhanced traditional indicators
+            for name, values in traditional_indicators.items():
+                avg_value = sum(values) / len(values)
+                enhanced_indicators.append({
+                    "name": name,
+                    "value": avg_value,
+                    "weight": self.bubble_indicators.get(name, {}).get('weight', 0.1),
+                    "threshold": self.bubble_indicators.get(name, {}).get('threshold', 0.5),
+                    "description": f"Average {name.replace('_', ' ')} from articles",
+                    "is_concerning": avg_value > self.bubble_indicators.get(name, {}).get('threshold', 0.5),
+                    "trend": "increasing" if avg_value > 0.5 else "decreasing"
+                })
+        
+        return enhanced_indicators
+    
+    def _analysis_to_dict(self, analysis: NewsAnalysis) -> Dict[str, Any]:
+        """Convert NewsAnalysis to dictionary"""
+        return {
+            "title": analysis.title,
+            "url": analysis.url,
+            "sentiment_score": analysis.sentiment_score,
+            "bubble_indicators": analysis.bubble_indicators,
+            "overall_bubble_risk": analysis.overall_bubble_risk,
+            "key_phrases": analysis.key_phrases,
+            "market_impact": analysis.market_impact,
+            "analysis_date": analysis.analysis_date.isoformat()
+        }
+    
+    def _stock_to_dict(self, stock) -> Dict[str, Any]:
+        """Convert StockData to dictionary"""
+        return {
+            "ticker": stock.ticker,
+            "name": stock.name,
+            "current_price": stock.current_price,
+            "change_1d": stock.change_1d,
+            "change_7d": stock.change_7d,
+            "change_30d": stock.change_30d,
+            "volume": stock.volume,
+            "volatility_30d": stock.volatility_30d,
+            "market_cap": stock.market_cap,
+            "pe_ratio": stock.pe_ratio
+        }
+    
+    def _convert_indicators_to_kpis(self, indicators: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Convert comprehensive indicators to KPI format"""
+        kpis = []
+        for name, indicator in indicators.items():
+            kpis.append({
+                "name": indicator.name,
+                "value": indicator.value,
+                "weight": indicator.weight,
+                "threshold": indicator.threshold,
+                "description": indicator.description,
+                "is_concerning": indicator.is_concerning,
+                "trend": indicator.trend,
+                "confidence": indicator.confidence
+            })
+        return kpis
+    
+    def _indicator_to_dict(self, indicator) -> Dict[str, Any]:
+        """Convert FinancialIndicator to dictionary"""
+        return {
+            "name": indicator.name,
+            "value": indicator.value,
+            "weight": indicator.weight,
+            "threshold": indicator.threshold,
+            "description": indicator.description,
+            "is_concerning": indicator.is_concerning,
+            "trend": indicator.trend,
+            "confidence": indicator.confidence,
+            "historical_context": indicator.historical_context
+        }
+    
+    def _fallback_analysis(self, articles: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Fallback analysis without financial data"""
+        article_analyses = []
+        for article in articles:
+            analysis = self.analyze_news_article(
+                title=article.get("title", ""),
+                content=article.get("content", ""),
+                url=article.get("url", "")
+            )
+            article_analyses.append(analysis)
+        
+        article_risks = [analysis.overall_bubble_risk for analysis in article_analyses]
+        avg_risk = sum(article_risks) / len(article_risks) if article_risks else 0
+        
+        return {
+            "article_analyses": [self._analysis_to_dict(analysis) for analysis in article_analyses],
+            "financial_data": None,
+            "combined_bubble_risk": avg_risk,
+            "article_bubble_risk": avg_risk,
+            "financial_bubble_risk": 0,
+            "financial_kpis": [],
+            "enhanced_indicators": [],
+            "indicator_summary": {"error": "No financial data available"},
+            "concerning_indicators": [],
+            "top_indicators": []
+        }
 
     def _extract_key_phrases(self, content: str) -> List[str]:
         """Extract key phrases related to AI bubble indicators"""

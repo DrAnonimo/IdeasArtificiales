@@ -1,105 +1,59 @@
 {
-  "last_updated": "2025-10-22T17:50:24.825800",
+  "last_updated": "2025-10-22T18:34:52.055153",
   "snapshots": [
     {
       "date": "2025-10-22",
-      "timestamp": "2025-10-22T17:50:24.825663",
-      "total_articles": 10,
-      "analyzed_articles": 10,
-      "average_sentiment": 0.24,
-      "average_bubble_risk": 0.208,
+      "timestamp": "2025-10-22T18:34:51.990116",
+      "total_articles": 2,
+      "analyzed_articles": 2,
+      "average_sentiment": 0.45,
+      "average_bubble_risk": 0.104,
       "market_assessment": "NEUTRAL MARKET",
       "concerning_articles": 0,
       "indicator_scores": {
-        "hype_level": 0.13,
-        "investment_frenzy": 0.5599999999999999,
-        "market_speculation": 0.08125,
-        "competitive_intensity": 0.06000000000000001,
-        "regulatory_concern": 0.04375
+        "hype_level": 0.2,
+        "investment_frenzy": 0.33333333333333337,
+        "market_speculation": 0.0625,
+        "competitive_intensity": 0.0,
+        "regulatory_concern": 0.03125,
+        "market_momentum": 0.0,
+        "volatility_risk": 0.0,
+        "valuation_concern": 0.0
       },
       "top_articles": [
         {
-          "title": "AI Valuation Multiples in 2025 - Aventis Advisors",
-          "url": "https://aventis-advisors.com/ai-valuation-multiples/",
-          "sentiment_score": 0.5,
-          "bubble_risk": 0.06666666666666667,
-          "market_impact": "Neutral - Balanced market sentiment"
-        },
-        {
-          "title": "Top 100 AI Startup Funding & Investment Statistics [2025]",
-          "url": "https://www.secondtalent.com/resources/ai-startup-funding-investment/",
-          "sentiment_score": 0.6,
-          "bubble_risk": 0.11666666666666667,
-          "market_impact": "Neutral - Balanced market sentiment"
-        },
-        {
-          "title": "The Essential AI Startup Funding Guide 2025: Strategies for Success",
-          "url": "https://www.dealmaker.tech/content/the-essential-ai-startup-funding-guide-2025-strategies-for-success",
+          "title": "AI Stocks Surge as NVIDIA Reports Record Revenue",
+          "url": "https://example.com/nvidia-earnings",
           "sentiment_score": 0.7,
-          "bubble_risk": 0.09416666666666666,
+          "bubble_risk": 0.15875,
           "market_impact": "Neutral - Balanced market sentiment"
         },
         {
-          "title": "AI startup valuations raise bubble fears as funding surges - Reuters",
-          "url": "https://www.reuters.com/legal/transactional/ai-startup-valuations-raise-bubble-fears-funding-surges-2025-10-03/",
-          "sentiment_score": -0.5,
-          "bubble_risk": 0.4675,
-          "market_impact": "Pessimistic - Low sentiment and market concerns"
-        },
-        {
-          "title": "AI startup valuations raise bubble fears as funding surges",
-          "url": "https://finance.yahoo.com/news/ai-startup-valuations-raise-bubble-074846305.html",
-          "sentiment_score": -0.5,
-          "bubble_risk": 0.48,
-          "market_impact": "Pessimistic - Low sentiment and market concerns"
-        },
-        {
-          "title": "Latest AI Startup Funding News and VC Investment Deals - 2025",
-          "url": "https://www.crescendo.ai/news/latest-vc-investment-deals-in-ai-startups",
-          "sentiment_score": 0.7,
-          "bubble_risk": 0.325,
-          "market_impact": "Neutral - Balanced market sentiment"
-        },
-        {
-          "title": "MythWorx Rockets Ahead: AI/AGI Startup Closes $5M Seed Round ...",
-          "url": "https://finance.yahoo.com/news/mythworx-rockets-ahead-ai-agi-132000248.html",
-          "sentiment_score": 0.7,
-          "bubble_risk": 0.12,
-          "market_impact": "Neutral - Balanced market sentiment"
-        },
-        {
-          "title": "AI: Boom? Bust? Or Both? - Neuberger Berman",
-          "url": "https://www.nb.com/en/global/insights/cio-weekly-perspectives-ai-boom-bust-or-both",
-          "sentiment_score": 0.5,
-          "bubble_risk": 0.14166666666666666,
-          "market_impact": "Neutral - Balanced market sentiment"
-        },
-        {
-          "title": "Startup Funding Outlook: VCs 'Chasing The AI Wave' But With Caution",
-          "url": "https://news.crunchbase.com/venture/startup-funding-ai-ipo-outlook-h2-2025/",
+          "title": "Tech Giants Invest Billions in AI Infrastructure",
+          "url": "https://example.com/ai-investments",
           "sentiment_score": 0.2,
-          "bubble_risk": 0.1825,
+          "bubble_risk": 0.049375,
           "market_impact": "Neutral - Balanced market sentiment"
-        },
-        {
-          "title": "What we mean when we talk about an artificial intelligence 'bubble'",
-          "url": "https://www.weforum.org/stories/2025/10/artificial-intelligence-bubble-dot-com-tulip-mania/",
-          "sentiment_score": -0.5,
-          "bubble_risk": 0.09083333333333334,
-          "market_impact": "Pessimistic - Low sentiment and market concerns"
         }
       ],
       "analysis_metadata": {
         "tracker_status": {
-          "total_articles": 10,
-          "analyzed_articles": 10,
+          "total_articles": 2,
+          "analyzed_articles": 2,
           "pending_analysis": 0,
           "data_file": "tracked_news.json",
-          "last_updated": "2025-10-22T17:50:24.825742"
+          "last_updated": "2025-10-22T18:34:51.990137"
         },
-        "analysis_date": "2025-10-22T17:50:24.825475",
+        "analysis_date": "2025-10-22T18:34:47.551044",
         "data_source": "tavily_api"
-      }
-    }
-  ]
-}
+      },
+      "financial_data": {
+        "stock_data": {
+          "NVDA": {
+            "ticker": "NVDA",
+            "name": "NVIDIA",
+            "current_price": 179.0894012451172,
+            "change_1d": -1.142968853574422,
+            "change_7d": -4.901553589688323,
+            "change_30d": null,
+            "volume": null

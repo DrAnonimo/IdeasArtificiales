@@ -5,8 +5,14 @@ import json
 import os
 from pathlib import Path
 import pandas as pd
-from .news_tracker import NewsTracker
-from .bubble_analysis import AIBubbleAnalyzer
+try:
+    from .news_tracker import NewsTracker
+    from .bubble_analysis import AIBubbleAnalyzer
+    from .financial_data_collector import FinancialDataCollector
+except ImportError:
+    from news_tracker import NewsTracker
+    from bubble_analysis import AIBubbleAnalyzer
+    from financial_data_collector import FinancialDataCollector
 
 
 @dataclass
@@ -23,6 +29,11 @@ class DailySnapshot:
     indicator_scores: Dict[str, float]
     top_articles: List[Dict[str, Any]]
     analysis_metadata: Dict[str, Any]
+    # New financial data fields
+    financial_data: Optional[Dict[str, Any]] = None
+    financial_bubble_risk: Optional[float] = None
+    combined_bubble_risk: Optional[float] = None
+    financial_kpis: Optional[List[Dict[str, Any]]] = None
 
 
 class TimeSeriesCollector:
@@ -33,11 +44,12 @@ class TimeSeriesCollector:
         self.data_dir.mkdir(exist_ok=True)
         self.tracker = NewsTracker()
         self.analyzer = AIBubbleAnalyzer()
+        self.financial_collector = FinancialDataCollector()
         self.snapshots_file = self.data_dir / "daily_snapshots.json"
         self.load_snapshots()
 
     def collect_daily_snapshot(self, force_reanalyze: bool = False) -> DailySnapshot:
-        """Collect a daily snapshot of AI bubble analysis"""
+        """Collect a daily snapshot of AI bubble analysis with financial data"""
         print(f"📊 Collecting daily snapshot for {datetime.now().strftime('%Y-%m-%d')}...")
         
         # Analyze current news
@@ -47,7 +59,37 @@ class TimeSeriesCollector:
         if 'error' in bubble_report:
             raise RuntimeError(f"Analysis failed: {bubble_report['error']}")
         
-        # Create daily snapshot
+        # Collect financial data
+        print("💰 Collecting financial data...")
+        try:
+            stock_data = self.financial_collector.collect_stock_data(days=30)
+            market_indices = self.financial_collector.collect_market_indices()
+            financial_indicators = self.financial_collector.calculate_financial_indicators(stock_data, market_indices)
+            
+            # Calculate financial bubble risk
+            financial_bubble_risk = financial_indicators.get('financial_bubble_risk', 0)
+            if financial_bubble_risk is None or str(financial_bubble_risk) == 'nan':
+                financial_bubble_risk = 0
+            
+            # Calculate combined bubble risk (70% article analysis, 30% financial data)
+            combined_bubble_risk = (bubble_report['average_bubble_risk'] * 0.7) + (financial_bubble_risk * 0.3)
+            
+            # Calculate financial KPIs
+            financial_kpis = self.analyzer._calculate_financial_kpis(financial_indicators)
+            
+            print(f"✅ Financial data collected: {len(stock_data)} stocks, VIX: {market_indices.vix:.2f}")
+            
+        except Exception as e:
+            print(f"⚠️  Financial data collection failed: {e}")
+            # Fallback to no financial data
+            stock_data = {}
+            market_indices = None
+            financial_indicators = {}
+            financial_bubble_risk = 0
+            combined_bubble_risk = bubble_report['average_bubble_risk']
+            financial_kpis = []
+        
+        # Create daily snapshot with financial data
         snapshot = DailySnapshot(
             date=datetime.now().strftime('%Y-%m-%d'),
             timestamp=datetime.now().isoformat(),
@@ -72,14 +114,31 @@ class TimeSeriesCollector:
                 'tracker_status': self.tracker.get_status(),
                 'analysis_date': bubble_report['analysis_date'],
                 'data_source': 'tavily_api'
-            }
+            },
+            # Financial data fields
+            financial_data={
+                'stock_data': {ticker: self.analyzer._stock_to_dict(stock) for ticker, stock in stock_data.items()},
+                'market_indices': {
+                    'sp500': market_indices.sp500 if market_indices else 0,
+                    'nasdaq': market_indices.nasdaq if market_indices else 0,
+                    'vix': market_indices.vix if market_indices else 0,
+                    'treasury_10y': market_indices.treasury_10y if market_indices else 0,
+                    'dollar_index': market_indices.dollar_index if market_indices else 0
+                },
+                'financial_indicators': financial_indicators
+            },
+            financial_bubble_risk=financial_bubble_risk,
+            combined_bubble_risk=combined_bubble_risk,
+            financial_kpis=financial_kpis
         )
         
         # Store snapshot
         self.add_snapshot(snapshot)
         
         print(f"✅ Daily snapshot collected: {snapshot.market_assessment}")
-        print(f"   📊 Bubble Risk: {snapshot.average_bubble_risk:.3f}")
+        print(f"   📊 Article Bubble Risk: {snapshot.average_bubble_risk:.3f}")
+        print(f"   💰 Financial Bubble Risk: {snapshot.financial_bubble_risk:.3f}")
+        print(f"   🎯 Combined Bubble Risk: {snapshot.combined_bubble_risk:.3f}")
         print(f"   😊 Sentiment: {snapshot.average_sentiment:.3f}")
         print(f"   🚨 Concerning Articles: {snapshot.concerning_articles}")
         
