@@ -1,0 +1,7 @@
+timestamp,date,total_articles,analyzed_articles,average_sentiment,average_bubble_risk,concerning_articles,market_assessment,indicator_name,indicator_value,metric_type
+2025-10-22T17:50:24.825663,2025-10-22,10,10,0.24,0.208,0,NEUTRAL MARKET,hype_level,0.13,indicator
+2025-10-22T17:50:24.825663,2025-10-22,10,10,0.24,0.208,0,NEUTRAL MARKET,investment_frenzy,0.5599999999999999,indicator
+2025-10-22T17:50:24.825663,2025-10-22,10,10,0.24,0.208,0,NEUTRAL MARKET,market_speculation,0.08125,indicator
+2025-10-22T17:50:24.825663,2025-10-22,10,10,0.24,0.208,0,NEUTRAL MARKET,competitive_intensity,0.06000000000000001,indicator
+2025-10-22T17:50:24.825663,2025-10-22,10,10,0.24,0.208,0,NEUTRAL MARKET,regulatory_concern,0.04375,indicator
+2025-10-22T17:50:24.825663,2025-10-22,10,10,0.24,0.208,0,NEUTRAL MARKET,summary,0.208,summary

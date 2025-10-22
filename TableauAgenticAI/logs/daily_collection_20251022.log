@@ -1,0 +1,45 @@
+2025-10-22 16:35:49,939 - INFO - 🚀 Starting daily AI bubble analysis data collection
+2025-10-22 16:35:49,939 - INFO - 🔍 Checking environment variables...
+2025-10-22 16:35:49,939 - INFO - ✅ Environment variables are set
+2025-10-22 16:35:49,939 - INFO - 📊 Initializing time series collector...
+2025-10-22 16:35:50,145 - INFO - 📊 Collecting daily snapshot...
+2025-10-22 16:35:50,145 - ERROR - ❌ Daily collection failed: Analysis failed: No analyzed articles available
+2025-10-22 16:35:50,147 - ERROR - Traceback (most recent call last):
+  File "/home/acardenas/Workspace/IdeasArtificiales/TableauAgenticAI/daily_collection.py", line 81, in collect_daily_data
+    snapshot = collector.collect_daily_snapshot(force_reanalyze=True)
+  File "/home/acardenas/Workspace/IdeasArtificiales/TableauAgenticAI/src/time_series_collector.py", line 48, in collect_daily_snapshot
+    raise RuntimeError(f"Analysis failed: {bubble_report['error']}")
+RuntimeError: Analysis failed: No analyzed articles available
+
+2025-10-22 17:50:12,323 - INFO - 🚀 Starting daily AI bubble analysis data collection
+2025-10-22 17:50:12,323 - INFO - 🔍 Checking environment variables...
+2025-10-22 17:50:12,323 - INFO - ✅ Environment variables are set
+2025-10-22 17:50:12,323 - INFO - 📊 Initializing time series collector...
+2025-10-22 17:50:12,445 - INFO - ⚠️  Snapshot for 2025-10-22 already exists. Updating...
+2025-10-22 17:50:12,445 - INFO - 📊 Collecting daily snapshot...
+2025-10-22 17:50:13,823 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:14,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:15,197 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:16,489 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:17,206 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:22,309 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:22,978 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:23,674 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:24,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:24,812 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 17:50:24,827 - INFO - ✅ Daily snapshot collected successfully
+2025-10-22 17:50:24,827 - INFO -    📅 Date: 2025-10-22
+2025-10-22 17:50:24,828 - INFO -    📊 Market Assessment: NEUTRAL MARKET
+2025-10-22 17:50:24,828 - INFO -    ⚠️  Bubble Risk: 0.208
+2025-10-22 17:50:24,828 - INFO -    😊 Sentiment: 0.240
+2025-10-22 17:50:24,829 - INFO -    🚨 Concerning Articles: 0
+2025-10-22 17:50:24,829 - INFO - 📊 Exporting data for Grafana...
+2025-10-22 17:50:24,843 - INFO - ✅ Grafana export completed
+2025-10-22 17:50:24,843 - INFO -    📁 Time Series CSV: time_series_data/grafana_time_series_30d.csv
+2025-10-22 17:50:24,843 - INFO -    📁 Dashboard Config: time_series_data/grafana_dashboard.json
+2025-10-22 17:50:24,844 - INFO -    📊 Data Points: 6
+2025-10-22 17:50:24,844 - INFO - 📈 Calculating trends...
+2025-10-22 17:50:24,844 - INFO - 📊 Collection Status:
+2025-10-22 17:50:24,844 - INFO -    📅 Total Snapshots: 1
+2025-10-22 17:50:24,844 - INFO -    📅 Latest Snapshot: 2025-10-22
+2025-10-22 17:50:24,844 - INFO - 🎉 Daily collection completed successfully!
