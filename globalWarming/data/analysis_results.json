@@ -1,0 +1,101 @@
+{
+  "temperature": {
+    "total_temperature_change_century": 0.7754890247546765,
+    "trend_per_year": 0.007754890247546766,
+    "correlation_coefficient": 0.767133663344506,
+    "p_value": 8.449183394991316e-21,
+    "is_statistically_significant": "True",
+    "standard_error": 0.0006517410458990674,
+    "decadal_trends": [
+      {
+        "decade": "1900s",
+        "trend_per_decade": 0.04790360717453676,
+        "mean_anomaly": -0.0074873002853003525
+      },
+      {
+        "decade": "1910s",
+        "trend_per_decade": -0.03713370494828684,
+        "mean_anomaly": 0.021227399597560988
+      },
+      {
+        "decade": "1920s",
+        "trend_per_decade": -0.05216169775017824,
+        "mean_anomaly": -0.00586962900339046
+      },
+      {
+        "decade": "1930s",
+        "trend_per_decade": 0.07831415648806059,
+        "mean_anomaly": 0.001232101738642511
+      },
+      {
+        "decade": "1940s",
+        "trend_per_decade": 0.02977066987294504,
+        "mean_anomaly": 0.01869864553761775
+      },
+      {
+        "decade": "1950s",
+        "trend_per_decade": 0.11981304837661585,
+        "mean_anomaly": 0.07779990968343345
+      },
+      {
+        "decade": "1960s",
+        "trend_per_decade": 0.03335524746016488,
+        "mean_anomaly": 0.16485639439081995
+      },
+      {
+        "decade": "1970s",
+        "trend_per_decade": 0.033724882745836134,
+        "mean_anomaly": 0.24447495281879097
+      },
+      {
+        "decade": "1980s",
+        "trend_per_decade": 0.14408609216875612,
+        "mean_anomaly": 0.33830278673907155
+      },
+      {
+        "decade": "1990s",
+        "trend_per_decade": -0.09906624794927071,
+        "mean_anomaly": 0.9536466002436492
+      }
+    ],
+    "data_points": 101,
+    "year_range": "1900-2000"
+  },
+  "sea_level": {
+    "sea_level_rise_per_century_mm": 131.2407850191305,
+    "trend_per_year_mm": 1.312407850191305,
+    "correlation_coefficient": 0.9919353511082746,
+    "p_value": 1.2490420541869198e-90,
+    "is_statistically_significant": "True",
+    "acceleration_mm_per_year": 0.6051198386391217,
+    "total_rise_century_mm": 140.47973577078474
+  },
+  "ocean_temperature": {
+    "ocean_warming_per_century_c": 0.7067058819806307,
+    "trend_per_year_c": 0.007067058819806306,
+    "correlation_coefficient": 0.6957504003573274,
+    "p_value": 6.751544464410273e-16,
+    "is_statistically_significant": "True",
+    "total_warming_century_c": 0.7732697103949926
+  },
+  "glacier": {
+    "retreat_per_century_m": 185.8013408521356,
+    "trend_per_year_m": 1.8580134085213562,
+    "correlation_coefficient": 0.8493799318596925,
+    "p_value": 1.1135411618752704e-06,
+    "is_statistically_significant": "True",
+    "total_retreat_century_m": 218.41434989213383,
+    "final_length_m": 781.5856501078662,
+    "initial_length_m": 1000.0
+  },
+  "co2": {
+    "co2_increase_per_century_ppm": 139.367408309651,
+    "trend_per_year_ppm": 1.39367408309651,
+    "correlation_coefficient": 0.9374920967392162,
+    "p_value": 3.528772989580934e-47,
+    "is_statistically_significant": "True",
+    "total_increase_century_ppm": 146.98118536310346,
+    "final_co2_ppm": 444.3044320495513,
+    "initial_co2_ppm": 297.3232466864478
+  }
+}
