@@ -1,0 +1,210 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║     SHERLOCK MYSTERY GAME - ARQUITECTURA COMPLETA                            ║
+║     UN AGENTE LANGGRAPH POR CADA PERSONAJE NPC                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  COMPONENTES EXTERNOS (NO son agentes LangGraph):                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│                                                                              │
+│  🔍 SHERLOCK HOLMES (Usuario/Input)                                         │
+│     • El usuario JUEGA como Sherlock Holmes                                 │
+│     • NO tiene agente LangGraph                                             │
+│     • Sus preguntas son el INPUT para los agentes NPC                       │
+│     • Flujo: Usuario → Pregunta → Agente NPC → Respuesta                   │
+│                                                                              │
+│  📝 DR. WATSON (Narrador/Sistema)                                           │
+│     • Sistema de narración programático                                     │
+│     • NO tiene agente LangGraph                                             │
+│     • Genera mensajes automáticamente:                                       │
+│       - Descripción inicial del caso                                        │
+│       - Comentarios ocasionales (30% probabilidad)                          │
+│       - Resúmenes cuando se solicitan                                       │
+│       - Lectura de correspondencia secreta                                  │
+│     • Flujo: Eventos → Watson → Mensajes narrativos                         │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+
+AGENTES LANGGRAPH (Solo para personajes NPC):
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  AGENTE: ROSE, CAMARERA                                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────┐
+│  START  │  (Entrada del grafo)
+└────┬────┘
+     │ invoke(initial_state)
+     │ {"messages": [...], "personaje": "rose", "pregunta": "..."}
+     ▼
+┌─────────────────────────────────────────────────────────────┐
+│              NODO: procesar (Lógica Específica)            │
+│                                                             │
+│  • Detecta preguntas sobre dinero/libras/robo              │
+│  • Agrega instrucción para EVADIR la pregunta              │
+│  • No revela el robo de 50 libras                          │
+└────┬────────────────────────────────────────────────────────┘
+     │
+     ▼
+┌─────────────────────────────────────────────────────────────┐
+│            NODO: generar_respuesta                          │
+│                                                             │
+│  Proceso:                                                    │
+│    1. Construye mensajes con:                               │
+│       - Prompt del sistema del personaje                    │
+│       - Conocimiento común                                  │
+│       - Contexto de relaciones familiares                   │
+│       - Historial de conversación                           │
+│       - Instrucciones especiales (si aplica)                │
+│    2. Invoca LLM (gpt-3.5-turbo)                           │
+│    3. Genera respuesta del personaje                        │
+│                                                             │
+│  Output:                                                     │
+│    - AIMessage con la respuesta del personaje               │
+└────┬────────────────────────────────────────────────────────┘
+     │ respuesta generada
+     ▼
+┌─────────┐
+│   END   │  (Salida del grafo)
+└─────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  AGENTE: ARTHUR HUXLEY, SOBRINO                                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────┐
+│  START  │  (Entrada del grafo)
+└────┬────┘
+     │ invoke(initial_state)
+     │ {"messages": [...], "personaje": "arthur", "pregunta": "..."}
+     ▼
+┌─────────────────────────────────────────────────────────────┐
+│              NODO: procesar (Lógica Específica)            │
+│                                                             │
+│  • Detecta preguntas que lo ponen nervioso                 │
+│  • (asesinato, herencia, Rose, etc.)                       │
+│  • Aumenta verbosidad si está nervioso                     │
+│  • Respuestas más largas y defensivas                       │
+└────┬────────────────────────────────────────────────────────┘
+     │
+     ▼
+┌─────────────────────────────────────────────────────────────┐
+│            NODO: generar_respuesta                          │
+│                                                             │
+│  Proceso:                                                    │
+│    1. Construye mensajes con:                               │
+│       - Prompt del sistema del personaje                    │
+│       - Conocimiento común                                  │
+│       - Contexto de relaciones familiares                   │
+│       - Historial de conversación                           │
+│       - Instrucciones especiales (si aplica)                │
+│    2. Invoca LLM (gpt-3.5-turbo)                           │
+│    3. Genera respuesta del personaje                        │
+│                                                             │
+│  Output:                                                     │
+│    - AIMessage con la respuesta del personaje               │
+└────┬────────────────────────────────────────────────────────┘
+     │ respuesta generada
+     ▼
+┌─────────┐
+│   END   │  (Salida del grafo)
+└─────────┘
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  AGENTE: JENKINS, MAYORDOMO                                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌─────────┐
+│  START  │  (Entrada del grafo)
+└────┬────┘
+     │ invoke(initial_state)
+     │ {"messages": [...], "personaje": "jenkins", "pregunta": "..."}
+     ▼
+┌─────────────────────────────────────────────────────────────┐
+│              NODO: procesar (Lógica Específica)            │
+│                                                             │
+│  • Detecta preguntas sobre correspondencia                 │
+│  • Si NO hay insistencia: RETICENTE                        │
+│  • Si HAY insistencia: REVELA ubicación                    │
+└────┬────────────────────────────────────────────────────────┘
+     │
+     ▼
+┌─────────────────────────────────────────────────────────────┐
+│            NODO: generar_respuesta                          │
+│                                                             │
+│  Proceso:                                                    │
+│    1. Construye mensajes con:                               │
+│       - Prompt del sistema del personaje                    │
+│       - Conocimiento común                                  │
+│       - Contexto de relaciones familiares                   │
+│       - Historial de conversación                           │
+│       - Instrucciones especiales (si aplica)                │
+│    2. Invoca LLM (gpt-3.5-turbo)                           │
+│    3. Genera respuesta del personaje                        │
+│                                                             │
+│  Output:                                                     │
+│    - AIMessage con la respuesta del personaje               │
+└────┬────────────────────────────────────────────────────────┘
+     │ respuesta generada
+     ▼
+┌─────────┐
+│   END   │  (Salida del grafo)
+└─────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+ARQUITECTURA GENERAL:
+
+• COMPONENTES DEL SISTEMA:
+  
+  🔍 SHERLOCK HOLMES (Usuario/Input):
+     - El usuario JUEGA como Sherlock Holmes
+     - NO tiene agente LangGraph
+     - Sus preguntas son el INPUT para los agentes NPC
+     - Flujo: Usuario → Pregunta → Agente NPC → Respuesta
+  
+  📝 DR. WATSON (Narrador/Sistema):
+     - Sistema de narración programático
+     - NO tiene agente LangGraph
+     - Genera mensajes automáticamente:
+       * Descripción inicial del caso
+       * Comentarios ocasionales (30% probabilidad)
+       * Resúmenes cuando se solicitan
+       * Lectura de correspondencia secreta
+     - Flujo: Eventos → Watson → Mensajes narrativos
+
+• AGENTES LANGGRAPH (Solo para personajes NPC):
+  UN AGENTE POR PERSONAJE: Cada personaje NPC tiene su propio agente LangGraph
+  independiente con lógica personalizada.
+
+• Agentes LangGraph activos:
+  - rose: Rose, camarera
+  - arthur: Arthur Huxley, sobrino
+  - jenkins: Jenkins, mayordomo
+
+• Estado: AgentState (TypedDict)
+  - messages: Sequence[BaseMessage]
+  - personaje: str
+  - pregunta: str
+
+• Flujo por agente:
+  1. Se crea un agente LangGraph específico para cada personaje
+  2. Cada consulta invoca el grafo del personaje correspondiente
+  3. El nodo "procesar" aplica lógica específica del personaje
+  4. El nodo "generar_respuesta" invoca el LLM
+  5. Se retorna la respuesta personalizada
+
+• Ventajas de esta arquitectura:
+  - Cada personaje tiene comportamiento único y consistente
+  - Fácil agregar nuevos personajes con su propia lógica
+  - Aislamiento: cambios en un agente no afectan a otros
+  - Escalable: cada agente puede tener su propia complejidad
+
+═══════════════════════════════════════════════════════════════════════════════

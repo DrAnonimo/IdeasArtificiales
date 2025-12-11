@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <title>Sherlock Local – Dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sherlock Dev – Juego en local</h1>
+
+  <!-- Auth -->
+  <div id="auth">
+    <label>OpenAI key (sk-...):<br/>
+    <input id="keyIn" type="password" placeholder="sk-XXXXXXXXXX"/></label><br/>
+    <button onclick="guardarKey()">Start</button>
+  </div>
+
+  <!-- Game -->
+  <div id="game" style="display:none">
+    <div id="chat"></div>
+    <textarea id="input" rows="2" placeholder="Pregunta..."></textarea><br/>
+    <button onclick="enviar()">Enviar</button>
+    <button onclick="cambiarPersonaje()">Cambiar personaje</button>
+    <button onclick="resolver()">Resolver crimen</button>
+  </div>
+
+  <!-- Notebook -->
+  <div id="notebook">
+    <strong>Cuaderno</strong>
+    <ul id="notas"></ul>
+  </div>
+
+  <!-- Victory modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

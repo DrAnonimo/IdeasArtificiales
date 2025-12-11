@@ -1,0 +1,7 @@
+{
+  "name": "sherlock-local",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve -s . -p 3000"
+  }
+}

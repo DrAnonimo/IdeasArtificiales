@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Configuración
+.sherlock_config
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/
+
+# Imágenes (opcional, descomenta si no quieres subirlas)
+# images/
+
+# OS
+.DS_Store
+Thumbs.db
+
